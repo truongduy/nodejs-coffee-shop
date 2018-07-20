@@ -1,0 +1,25 @@
+extends layout
+
+block content
+  h1.text-center= title
+  .row
+    .col-md-6.offset-md-3
+      form(action="/users" method="post" encType="multipart/form-data")
+        .form-group
+          label.custom-file
+            input.custom-file-input(type="file" name="image" placeholder="Họ và tên")
+            span.custom-file-control
+        .form-group
+          input.form-control(type="text" name="username" placeholder="Username")
+        .form-group
+          input.form-control(type="password" name="password" placeholder="Password")
+        .form-group
+          input.form-control(type="text" name="fullName" placeholder="Họ và tên")
+        .form-group
+          input.form-control(type="text" name="email" placeholder="Email")
+        .form-group
+          input.form-control(type="text" name="phoneNumber" placeholder="Số điện thoại")
+        .form-group
+          button.btn.btn-primary(type="submit") Register
+
+
