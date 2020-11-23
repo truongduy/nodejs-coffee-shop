@@ -1,0 +1,6 @@
+.git
+npm-debug.log
+.vscode
+node_modules
+.DS_Store
+public/

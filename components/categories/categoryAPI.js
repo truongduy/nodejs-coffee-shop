@@ -6,6 +6,10 @@ const fs = require('fs');
 
 import Category from './categoryModel';
 
+router.get('/test', function(req, res, next) {
+	return res.send({ test: "ok" })
+})
+
 /* GET Products */
 router.get('/', function(req, res, next) {
 	Category.find({}, (err, result) => {
